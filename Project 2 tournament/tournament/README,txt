@@ -1,0 +1,41 @@
+Intro to Relational Database
+Final project: Swiss tournament
+
+Overview:
+
+The project consists of a Python module that uses the PostgreSQL database to keep track of players and matches in a game tournament. The module is unit tested by other Python code that exercies the calls that implement the tournament.
+
+What is included:
+
+There are 3 files associated with the project.
+
+tournament/
+|-- tournament.py             # main module for database and tournament functionality
+|-- tournament_test.py        # Unit test code to verify tournament.py implementation
+|-- tournament.sql            # Database table and view creation SQL code
+
+Dependencies:
+
+This implementation depends on a PostgreSQL database and the Bleach Python library.
+
+To run:
+
+To build and access the database, run psql followed by \i tournament.sql
+In the tournament directory, use Python to run the tournament_test.py module.
+
+If successful, the output will look like this -
+
+1. Old matches can be deleted.
+2. Player records can be deleted.
+3. After deleting, countPlayers() returns zero.
+4. After registering a player, countPlayers() returns 1.
+5. Players can be registered and deleted.
+6. Newly registered players appear in the standings with no matches.
+7. After a match, players have updated standings.
+8. After one match, players with one win are paired.
+Success!  All tests pass!
+
+Author:
+
+Mike Keogh
+mikekeogh26@gmail.com
